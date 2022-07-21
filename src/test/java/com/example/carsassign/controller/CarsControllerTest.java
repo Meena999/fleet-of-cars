@@ -1,4 +1,4 @@
-package com.example.carsassigntest.controller;
+package com.example.carsassign.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -23,7 +23,7 @@ public class CarsControllerTest extends AbstractTest {
    }
    @Test
    public void getProductsList() throws Exception {
-      String uri = "/api/cars";
+      String uri = "http://localhost:8080/api/cars";
       MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri)
          .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
       

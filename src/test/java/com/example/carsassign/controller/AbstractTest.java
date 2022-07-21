@@ -1,4 +1,4 @@
-package com.example.carsassigntest.controller;
+package com.example.carsassign.controller;
 
 import java.io.IOException;
 import org.junit.runner.RunWith;
