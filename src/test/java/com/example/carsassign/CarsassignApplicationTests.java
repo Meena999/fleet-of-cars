@@ -1,4 +1,4 @@
-package com.example.carsassigntest;
+package com.example.carsassign;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
