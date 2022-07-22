@@ -31,27 +31,12 @@ public class CarsController {
         public List<Cars> readCars() {
             return carService.getCars();
         }
-        
-//        @RequestMapping(value="/cars/{carId}", method=RequestMethod.GET)
-//        public Optional<Cars> readCarsDetails(@PathVariable(value = "carId") Long id) {
-//            return carService.getCarsDetails(id);
-//        }
+       
         
         @RequestMapping(value="/cars/{carName}", method=RequestMethod.GET)
         public List<Cars> readCarsbyName(@PathVariable(value = "carName") String name) {
         	return carService.getCarsDetailsbyName(name);
         }
-
-//
-//        @RequestMapping(value="/cars/{carId}", method=RequestMethod.PUT)
-//        public Cars readCars(@PathVariable(value = "carId") Long id, @RequestBody Cars carDetails) {
-//            return carService.updateCars(id, carDetails);
-//        }
-//
-//        @RequestMapping(value="/cars/{carId}", method=RequestMethod.DELETE)
-//        public void deleteCars(@PathVariable(value = "carId") Long id) {
-//            carService.deleteCars(id);
-//        }
 
 
 }
